@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 150 35% 15%;
+    --foreground: 0 0% 98%;
+
+    --card: 150 30% 18%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 150 35% 15%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 145 50% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 25% 25%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 150 20% 30%;
+    --muted-foreground: 150 10% 70%;
+
+    --accent: 145 60% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 150 20% 30%;
+    --input: 150 20% 25%;
+    --ring: 145 50% 45%;
+
+    --radius: 0.75rem;
+    
+    --gradient-nature: linear-gradient(135deg, hsl(150 35% 15%), hsl(150 30% 20%));
+    --shadow-elevated: 0 10px 40px -10px hsl(150 50% 10% / 0.5);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 150 35% 12%;
+    --foreground: 0 0% 98%;
+
+    --card: 150 30% 15%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 150 35% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 145 50% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 25% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 150 20% 25%;
+    --muted-foreground: 150 10% 65%;
+
+    --accent: 145 60% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 150 20% 25%;
+    --input: 150 20% 20%;
+    --ring: 145 50% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
